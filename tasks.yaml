@@ -9,7 +9,7 @@ variables:
     default: "postgres-operator"
   - name: PACKAGE_VERSION
     description: "Version of the package"
-    default: "1.15.1-uds.1"
+    default: "7.1.1-uds.6"
   - name: PACKAGE_FLAVOR
     default: "upstream"
   - name: ARCHITECTURE

@@ -1,0 +1,9 @@
+kind: UDSBundle
+metadata:
+  name: minio-operator
+  version: 1.15.1-uds.1
+packages:
+  - name: postgres-operator
+    repository: ghcr.io/uds-packages/postgres-operator
+    ref: 1.15.1-uds.1-upstream
+

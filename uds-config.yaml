@@ -1,0 +1,4 @@
+options:
+  tmp_dir: /var/tmp
+shared:
+  domain: uds.local

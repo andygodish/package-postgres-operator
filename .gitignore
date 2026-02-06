@@ -8,3 +8,4 @@ tmp/
 zarf-config.yaml
 *.tar
 certs/** 
+.tmp_bundle

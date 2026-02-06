@@ -2,3 +2,18 @@ options:
   tmp_dir: /var/tmp
 shared:
   domain: uds.local
+variables:
+  postgres-operator:
+    POSTGRESQL:
+      enabled: true
+      teamId: "uds"
+      volume:
+        size: "30Gi"
+      numberOfInstances: 1
+      users:
+        keycloak.keycloak: []  # database owner
+      databases:
+        keyblockdb: keycloak.keycloak
+      version: "14"
+      ingress:
+        - remoteNamespace: keycloak

@@ -12,8 +12,11 @@ variables:
       numberOfInstances: 1
       users:
         keycloak.keycloak: []  # database owner
+        mattermost.mattermost: []
       databases:
         keyblockdb: keycloak.keycloak
+        mattermostdb: mattermost.mattermost
       version: "14"
       ingress:
         - remoteNamespace: keycloak
+        - remoteNamespace: mattermost

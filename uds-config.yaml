@@ -13,10 +13,13 @@ variables:
       users:
         keycloak.keycloak: []  # database owner
         mattermost.mattermost: []
+        grafana.grafana: []
       databases:
         keyblockdb: keycloak.keycloak
         mattermostdb: mattermost.mattermost
+        grafanadb: grafana.grafana
       version: "14"
       ingress:
         - remoteNamespace: keycloak
         - remoteNamespace: mattermost
+        - remoteNamespace: grafana

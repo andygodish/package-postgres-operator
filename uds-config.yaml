@@ -14,12 +14,15 @@ variables:
         keycloak.keycloak: []  # database owner
         mattermost.mattermost: []
         grafana.grafana: []
+        gitea.gitea: []
       databases:
         keyblockdb: keycloak.keycloak
         mattermostdb: mattermost.mattermost
         grafanadb: grafana.grafana
+        giteadb: gitea.gitea
       version: "14"
       ingress:
         - remoteNamespace: keycloak
         - remoteNamespace: mattermost
         - remoteNamespace: grafana
+        - remoteNamespace: gitea
